@@ -6,11 +6,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <% if current_user %>
-          <li class="nav-item">
-            <%= link_to 'Chat', user_path(current_user), class: "nav-link" %>
-          </li>
-        <% end %>
       </ul>
       <% if current_user %>
         <%= button_to 'LogOut', destroy_user_session_path, method: :delete, class: 'btn btn-outline-success' %>
