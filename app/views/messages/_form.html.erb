@@ -1,0 +1,6 @@
+<%= form_for [@room, @message] do |f| %>
+  <div class="input-group mb-3">
+    <%= f.text_field :content, class: 'form-control' %>
+    <%= f.submit class: 'btn btn-primary' %>
+  </div>
+<% end %>
