@@ -52,6 +52,9 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
 
   gem 'dotenv'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -67,3 +70,4 @@ end
 
 
 gem "devise", "~> 4.9"
+gem 'awesome_print'
