@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :room do
-    name { "MyString" }
-    is_public { false }
+    name { Faker::Name.unique.name }
+    is_public { true }
   end
 end
