@@ -1,6 +1,7 @@
 class RoomsController < ApplicationController
   before_action :authenticate_user!
   def show
+    @k = current_user
     @room = Room.find_by_id(params[:id])
     if @room.is_public == false
       room_name = @room.name.split("-").map(&:to_i)
